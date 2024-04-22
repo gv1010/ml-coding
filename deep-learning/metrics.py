@@ -38,7 +38,6 @@ def precision_recall(true, pred, average="macro"):
     cls_unq = len(true_set)
     cm = np.zeros((cls_unq, cls_unq), dtype=np.int8)
     
-    conf_matrix = defaultdict(int)
     for t,p in zip(true, pred):
         cm[t][p] += 1
 
@@ -84,6 +83,16 @@ def precision_recall(true, pred, average="macro"):
         print(np.sum(recall_all), "|", recall_score(true, pred, average="weighted"))
 
     return ""
+
+def roc(true, pred):
+    pass
+
+# We shall plot True positive rate(Recall) and false positive rate(fp/(fp+tn)) for increasing threholds,
+# Also is there a need to calibrate the prediction score ?
+# https://arize.com/blog/what-is-auc/
+# https://www.analyticsvidhya.com/blog/2022/10/calibration-of-machine-learning-models/
+
+
 
 length = 100
 true = [random.randint(0,2) for _ in range(length)]
