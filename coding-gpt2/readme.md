@@ -72,3 +72,4 @@ def calculate_average_age(weight):
 
 - We can see the quantize model made some error in the output code, as these models are autoregressive and most of the token outputs are probabilistic based on the past words. 
 - Creating a more sensible outputs which are accurate to the real world is challeneging, will be working on the  advanced methods(Static Quantization, QAT, RoPE and Flash Attention) to improve the model performance.
+- follow: https://x.com/hetu_1010
