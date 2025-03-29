@@ -32,7 +32,7 @@ The dynamic quantized model shows a slight increase in validation loss compared 
 
 Inference and validation were performed on a system with the following specifications:
 
-- **CPU:** 16gb 8 core CPU
+- **CPU:** 16gb i5 8 core CPU
 
 ### Performance Metrics (for 250 tokens)
 
@@ -41,7 +41,7 @@ Inference and validation were performed on a system with the following specifica
 | Time Taken     | 84.72966575622559 s | 62.362414598464966 s |
 | Tokens/s       | 2.950560441478326   | 4.0088248925203365  |
 
-The dynamic quantized model demonstrates a significant improvement in inference speed (Tokens/s) compared to the original model.
+The dynamic quantized model demonstrates a slight improvement in inference speed (Tokens/s) compared to the original model.
 
 ## Output Examples
 
@@ -71,4 +71,4 @@ def calculate_average_age(weight):
 ```
 
 - We can see the quantize model made some error in the output code, as these models are autoregressive and most of the token outputs are probabilistic based on the past words. 
-- Creating a more sensible outputs which are accurate to the real world is challeneging, we be working on the  advanced methods(Static Quantization, QAT, RoPE and Flash Attention) to improve the model performance.
+- Creating a more sensible outputs which are accurate to the real world is challeneging, will be working on the  advanced methods(Static Quantization, QAT, RoPE and Flash Attention) to improve the model performance.
