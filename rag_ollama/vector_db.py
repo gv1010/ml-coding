@@ -6,7 +6,8 @@ class VectorDB:
     def __init__(self, vectorstore_dir: str = "./faiss_index"):
         """Initialize FAISS vector database."""
         self.vectorstore_dir = vectorstore_dir
-        self.embeddings = HuggingFaceEmbeddings(model_name="avsolatorio/GIST-large-Embedding-v0")
+        # self.embeddings = HuggingFaceEmbeddings(model_name="avsolatorio/GIST-large-Embedding-v0")
+        self.embeddings = HuggingFaceEmbeddings(model_name="thenlper/gte-base")
         self.vectorstore = None
 
     def load_or_create_vectorstore(self, texts: list):
