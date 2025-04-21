@@ -56,6 +56,14 @@ Run the main.py Script:
 ```python3 main.py```
 
 
+### Examples
+
+Here are some examples of the application interface:
+
+![Example 1: Input Query](images/example1.png)
+
+![Example 2: Search Results](images/example2.png)
+
 
 
 ##### to be added if the systems needs to scaled:
